@@ -1,6 +1,5 @@
 
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
 import { ChevronRight, ArrowRight, Search } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
@@ -8,17 +7,17 @@ const HeroSection = () => {
   // Sample integrations data - this would typically come from an API
   const integrations = [
     { name: "OpenAI API", status: "Active", icon: "🤖" },
-    { name: "Salesforce", status: "Active", icon: "☁️" },
-    { name: "Slack", status: "Active", icon: "💬" },
-    { name: "Google Sheets", status: "Active", icon: "📊" },
+    { name: "Langchain", status: "Active", icon: "🔗" },
+    { name: "Hugging Face", status: "Active", icon: "🤗" },
+    { name: "Anthropic", status: "Active", icon: "🧠" },
+    { name: "Vector DB", status: "Active", icon: "📊" },
     { name: "GitHub", status: "Active", icon: "🐙" },
     { name: "Notion", status: "Active", icon: "📝" },
-    { name: "Airtable", status: "Active", icon: "📋" },
-    { name: "Zapier", status: "Active", icon: "⚡" },
-    { name: "HubSpot", status: "Active", icon: "🔄" },
-    { name: "Twilio", status: "Active", icon: "📱" },
-    { name: "Zoom", status: "Active", icon: "🎥" },
-    { name: "Microsoft Teams", status: "Active", icon: "👥" }
+    { name: "Postgres", status: "Active", icon: "🐘" },
+    { name: "LlamaIndex", status: "Active", icon: "🦙" },
+    { name: "Pinecone", status: "Active", icon: "🌲" },
+    { name: "Supabase", status: "Active", icon: "⚡" },
+    { name: "Mistral", status: "Active", icon: "🌬️" }
   ];
 
   return (
@@ -29,18 +28,18 @@ const HeroSection = () => {
             <div className="space-y-4">
               <div className="inline-flex items-center px-3 py-1 rounded-full bg-accent/10 text-accent border border-accent/20 text-sm font-medium mb-2">
                 <span className="animate-wave mr-2">👋</span>
-                <span>Automations for AI apps</span>
+                <span>AI Application Development</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tighter animate-fade-in">
-                <span className="gradient-text">AI-powered</span> integrations for your applications
+                <span className="gradient-text">Connect any LLM</span> to your data
               </h1>
               <p className="text-xl text-foreground/80 animate-fade-in animate-delay-100">
-                Connect your AI applications with hundreds of external services without writing a line of code. Build workflows, automate tasks, and integrate your AI systems with your existing tech stack.
+                Build robust AI applications with secure data connections, sophisticated workflows, and powerful tools to unlock the full potential of large language models.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in animate-delay-200">
               <Button className="text-lg px-8 py-6 bg-accent hover:bg-accent/90 shadow-lg hover:shadow-xl transition-all group">
-                Get Started Free
+                Start Building Free
                 <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="outline" className="text-lg px-8 py-6">
@@ -66,7 +65,7 @@ const HeroSection = () => {
                 />
               </div>
               <div className="text-sm text-foreground/80">
-                <span className="font-medium">500+</span> developers trust ACI.dev
+                <span className="font-medium">1000+</span> developers trust ACI.dev
               </div>
             </div>
           </div>
@@ -86,7 +85,7 @@ const HeroSection = () => {
               <div className="p-4 space-y-3">
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <h3 className="text-base font-semibold">Active Integrations</h3>
+                    <h3 className="text-base font-semibold">Active AI Models</h3>
                     <div className="flex items-center gap-2">
                       <div className="relative">
                         <Search className="absolute left-2 top-1/2 transform -translate-y-1/2 h-3.5 w-3.5 text-muted-foreground" />
@@ -124,7 +123,7 @@ const HeroSection = () => {
                   </ScrollArea>
                   
                   <div className="text-xs text-muted-foreground text-center">
-                    <span className="font-medium">300+</span> integrations available
+                    <span className="font-medium">30+</span> AI models and integrations available
                   </div>
                 </div>
               </div>

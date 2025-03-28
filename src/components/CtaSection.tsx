@@ -13,10 +13,10 @@ const CtaSection = () => {
               <span>Ready to get started?</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold leading-tight">
-              Supercharge your AI applications today
+              Start building better AI applications today
             </h2>
             <p className="text-xl text-foreground/70">
-              Join thousands of developers building better AI-powered applications with ACI.dev
+              Join hundreds of developers building secure, powerful AI applications with ACI.dev
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
@@ -30,7 +30,7 @@ const CtaSection = () => {
             </div>
             
             <div className="text-sm text-foreground/60 mt-4">
-              No credit card required. Free plan includes 5 integrations.
+              No credit card required. Free tier includes 1 workflow and 500 API calls.
             </div>
           </div>
         </div>

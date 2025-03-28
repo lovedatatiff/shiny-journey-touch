@@ -11,43 +11,43 @@ const pricingOptions = [
     price: { monthly: 0, annual: 0 },
     description: "Perfect for trying out ACI.dev",
     features: [
-      "Up to 5 integrations",
-      "100 API calls per day",
-      "Basic monitoring",
+      "1 workflow",
+      "500 API calls per month",
+      "1 data connector",
       "Community support",
-      "24 hour retention",
+      "1 day log retention",
     ],
-    cta: "Get Started",
+    cta: "Get Started Free",
     popular: false,
   },
   {
-    title: "Professional",
-    price: { monthly: 49, annual: 39 },
-    description: "Ideal for growing businesses",
+    title: "Pro",
+    price: { monthly: 79, annual: 69 },
+    description: "For professional developers",
     features: [
-      "Up to 25 integrations",
-      "10,000 API calls per day",
-      "Advanced monitoring",
+      "Unlimited workflows",
+      "10,000 API calls per month",
+      "5 data connectors",
       "Email support",
-      "30 day retention",
-      "Custom workflows",
+      "7 day log retention",
+      "Custom Python functions",
     ],
     cta: "Start Free Trial",
     popular: true,
   },
   {
     title: "Enterprise",
-    price: { monthly: 199, annual: 169 },
-    description: "For organizations with complex needs",
+    price: { monthly: 299, annual: 249 },
+    description: "For organizations building AI at scale",
     features: [
-      "Unlimited integrations",
-      "100,000 API calls per day",
-      "Advanced monitoring & analytics",
+      "Unlimited workflows",
+      "100,000 API calls per month",
+      "Unlimited data connectors",
       "Priority support",
-      "90 day retention",
-      "Custom workflows",
-      "Dedicated account manager",
+      "30 day log retention",
+      "Custom Python functions",
       "SSO & advanced security",
+      "Dedicated account manager",
     ],
     cta: "Contact Sales",
     popular: false,
@@ -65,7 +65,7 @@ const PricingSection = () => {
             Simple, transparent pricing
           </h2>
           <p className="text-xl text-foreground/70">
-            Choose the plan that's right for your business
+            Choose the plan that's right for your AI development needs
           </p>
 
           <div className="flex items-center justify-center mt-8 space-x-4">
@@ -141,10 +141,10 @@ const PricingSection = () => {
         </div>
 
         <div className="mt-16 max-w-3xl mx-auto text-center">
-          <h3 className="text-2xl font-bold mb-4">Need a custom plan?</h3>
+          <h3 className="text-2xl font-bold mb-4">Need a custom solution?</h3>
           <p className="text-foreground/70 mb-6">
-            We offer tailored solutions for enterprises with specific requirements.
-            Contact our sales team to discuss a custom plan.
+            We offer tailored solutions for enterprises building AI at scale.
+            Contact our sales team to discuss your specific requirements.
           </p>
           <Button variant="outline" size="lg">
             Contact Sales

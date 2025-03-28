@@ -1,0 +1,60 @@
+
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#F0F5FF" rx="20"/>
+  
+  <!-- Workflow Builder -->
+  <rect x="100" y="50" width="600" height="300" rx="10" fill="white" stroke="#8B5CF6" stroke-width="2"/>
+  <rect x="100" y="50" width="600" height="40" rx="10" fill="#8B5CF6" stroke="#8B5CF6" stroke-width="2"/>
+  <text x="150" y="75" font-family="Arial" font-size="16" fill="white">Visual Workflow Builder</text>
+  
+  <!-- Nodes -->
+  <circle cx="200" cy="150" r="40" fill="#E5DEFF" stroke="#8B5CF6" stroke-width="2"/>
+  <text x="200" y="155" font-family="Arial" font-size="14" fill="#4C1D95" text-anchor="middle">Input</text>
+  
+  <rect x="300" y="110" width="120" height="80" rx="10" fill="#E5DEFF" stroke="#8B5CF6" stroke-width="2"/>
+  <text x="360" y="155" font-family="Arial" font-size="14" fill="#4C1D95" text-anchor="middle">Process Data</text>
+  
+  <rect x="480" y="110" width="120" height="80" rx="10" fill="#E5DEFF" stroke="#8B5CF6" stroke-width="2"/>
+  <text x="540" y="155" font-family="Arial" font-size="14" fill="#4C1D95" text-anchor="middle">AI Model</text>
+  
+  <circle cx="660" cy="150" r="40" fill="#E5DEFF" stroke="#8B5CF6" stroke-width="2"/>
+  <text x="660" y="155" font-family="Arial" font-size="14" fill="#4C1D95" text-anchor="middle">Output</text>
+  
+  <!-- Conditional Branch -->
+  <rect x="300" y="250" width="120" height="80" rx="10" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/>
+  <text x="360" y="295" font-family="Arial" font-size="14" fill="#991B1B" text-anchor="middle">Error Handling</text>
+  
+  <!-- Tool Node -->
+  <rect x="480" y="250" width="120" height="80" rx="10" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+  <text x="540" y="295" font-family="Arial" font-size="14" fill="#1E40AF" text-anchor="middle">Custom Tool</text>
+  
+  <!-- Connections -->
+  <line x1="240" y1="150" x2="300" y2="150" stroke="#4C1D95" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="420" y1="150" x2="480" y2="150" stroke="#4C1D95" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="600" y1="150" x2="620" y2="150" stroke="#4C1D95" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <line x1="360" y1="190" x2="360" y2="250" stroke="#991B1B" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowRed)"/>
+  <line x1="420" y1="150" x2="480" y2="250" stroke="#1E40AF" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowBlue)"/>
+  
+  <!-- Panel -->
+  <rect x="150" y="370" width="500" height="80" rx="10" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  
+  <text x="170" y="400" font-family="Arial" font-size="14" fill="#4B5563">• Drag-and-drop interface</text>
+  <text x="170" y="430" font-family="Arial" font-size="14" fill="#4B5563">• Conditional logic</text>
+  
+  <text x="400" y="400" font-family="Arial" font-size="14" fill="#4B5563">• Python functions</text>
+  <text x="400" y="430" font-family="Arial" font-size="14" fill="#4B5563">• Model chaining</text>
+  
+  <!-- Arrow Markers -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4C1D95"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#991B1B"/>
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1E40AF"/>
+    </marker>
+  </defs>
+</svg>

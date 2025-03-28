@@ -5,21 +5,21 @@ import { Quote } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "ACI.dev completely transformed how our AI applications integrate with our existing systems. The time savings alone have been incredible.",
+      "ACI has dramatically simplified how we build AI applications. What used to take months now takes days, and our developers love the visual workflow builder.",
     author: "Sarah Johnson",
     title: "CTO, TechFlow Inc.",
     avatar: "https://randomuser.me/api/portraits/women/32.jpg",
   },
   {
     quote:
-      "Setting up integrations used to take our team weeks. With ACI.dev, we can deploy new connections in minutes, not days or weeks.",
+      "The ability to connect our data to LLMs without compromising security was a game-changer for us. ACI's platform is now central to our AI strategy.",
     author: "Michael Chang",
     title: "Lead Developer, AI Solutions",
     avatar: "https://randomuser.me/api/portraits/men/53.jpg",
   },
   {
     quote:
-      "The reliability of ACI.dev's platform is unmatched. We've processed over 1M API calls without a single issue.",
+      "We've reduced our AI application development time by 70% since adopting ACI. The monitoring tools have also helped us optimize costs significantly.",
     author: "Emma Rodriguez",
     title: "VP of Engineering, FutureAI",
     avatar: "https://randomuser.me/api/portraits/women/63.jpg",
@@ -35,7 +35,7 @@ const TestimonialsSection = () => {
       <div className="container max-w-7xl mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="text-3xl md:text-4xl font-bold gradient-text inline-block">
-            Trusted by innovative companies
+            Trusted by innovative teams
           </h2>
           <p className="text-xl text-foreground/70">
             See what our customers are saying about ACI.dev
@@ -71,9 +71,9 @@ const TestimonialsSection = () => {
         </div>
 
         <div className="mt-16 flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-70">
-          {[1, 2, 3, 4, 5, 6].map((i) => (
+          {['Acme Inc', 'GlobalTech', 'FutureCorp', 'InnovateLabs', 'TechGiants', 'AIVentures'].map((company, i) => (
             <div key={i} className="h-12">
-              <div className="w-32 h-8 bg-foreground/20 rounded animate-pulse-slow"></div>
+              <div className="text-lg font-semibold text-foreground/50">{company}</div>
             </div>
           ))}
         </div>

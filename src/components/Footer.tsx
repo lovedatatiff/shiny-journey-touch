@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="md:col-span-1 space-y-4">
             <div className="text-2xl font-bold gradient-text">ACI.dev</div>
             <p className="text-foreground/70">
-              Connecting AI applications to your tech stack without the hassle.
+              Build, deploy, and scale AI applications with confidence.
             </p>
             <div className="flex space-x-4 pt-2">
               <Button variant="ghost" size="icon" className="h-10 w-10 rounded-full">

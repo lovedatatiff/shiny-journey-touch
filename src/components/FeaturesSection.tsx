@@ -3,133 +3,133 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { motion, AnimatePresence } from "framer-motion";
-import { Check, Zap, Globe, Shield, Cpu, Link, ArrowRight, Code, Database, GitBranch, Sparkles, Star, Rocket, Play, Clock, BarChart } from "lucide-react";
+import { Check, Zap, Globe, Shield, Cpu, Link, ArrowRight, Code, Database, GitBranch, Sparkles, Star, Rocket, Play, Clock, BarChart, Tool, CreditCard } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 
 const features = [
   {
-    id: "easy-integration",
-    icon: <Zap className="h-10 w-10 text-accent" />,
-    title: "Easy Integration",
-    description: "Connect to over 300+ platforms without writing a single line of code.",
+    id: "data-connectors",
+    icon: <Database className="h-10 w-10 text-accent" />,
+    title: "Data Connectors",
+    description: "Connect your LLMs to any data source without compromising on security or performance.",
     benefits: [
-      "Drag-and-drop interface",
-      "Pre-built templates",
-      "Auto-validation of connections",
-      "Visual workflow builder"
+      "PDF, text, image processing",
+      "Cloud storage integration",
+      "Database connectors",
+      "Zero token leakage"
     ],
     demo: {
-      title: "Point & Click Integration",
+      title: "Data Connection",
       steps: [
-        "Select integration from marketplace",
-        "Authenticate with OAuth",
-        "Map data fields",
+        "Select data source",
+        "Authenticate securely",
+        "Configure data processing",
         "Test and deploy"
-      ]
-    }
-  },
-  {
-    id: "global",
-    icon: <Globe className="h-10 w-10 text-accent" />,
-    title: "Global Deployment",
-    description: "Deploy AI integrations globally with ultra-low latency performance.",
-    benefits: [
-      "Edge servers in 35+ regions",
-      "99.99% uptime guarantee",
-      "Auto-scaling infrastructure",
-      "Real-time request monitoring"
-    ],
-    demo: {
-      title: "Worldwide Performance",
-      steps: [
-        "Select regions for deployment",
-        "Set performance parameters",
-        "Monitor global latency stats",
-        "Auto-scale during traffic spikes"
-      ]
-    }
-  },
-  {
-    id: "security",
-    icon: <Shield className="h-10 w-10 text-accent" />,
-    title: "Enterprise Security",
-    description: "Bank-level encryption and compliance for all your integrations.",
-    benefits: [
-      "SOC 2 Type II compliant",
-      "End-to-end encryption",
-      "Role-based access control",
-      "Audit logs for all actions"
-    ],
-    demo: {
-      title: "Security Controls",
-      steps: [
-        "Configure security policies",
-        "Set up access controls",
-        "Enable audit logging",
-        "Schedule compliance reports"
-      ]
-    }
-  },
-  {
-    id: "ai",
-    icon: <Cpu className="h-10 w-10 text-accent" />,
-    title: "AI-Powered Automation",
-    description: "Let AI handle routine tasks and enhance human decision-making.",
-    benefits: [
-      "Smart data transformation",
-      "Anomaly detection",
-      "Predictive workflow triggers",
-      "Natural language processing"
-    ],
-    demo: {
-      title: "AI Assistants",
-      steps: [
-        "Train on your business data",
-        "Create decision rules",
-        "Set up alert thresholds",
-        "Review AI recommendations"
       ]
     }
   },
   {
     id: "workflows",
     icon: <Link className="h-10 w-10 text-accent" />,
-    title: "Intelligent Workflows",
-    description: "Create sophisticated multi-step workflows with conditional logic.",
+    title: "Workflows",
+    description: "Create custom AI workflows with our visual editor to match your unique business needs.",
     benefits: [
+      "Visual workflow builder",
       "Conditional branching",
-      "Error handling built-in",
-      "Scheduled triggers",
-      "Parallel execution paths"
+      "Multi-model chaining",
+      "Custom Python functions"
     ],
     demo: {
-      title: "Workflow Builder",
+      title: "Workflow Creation",
       steps: [
         "Design workflow visually",
-        "Add conditional logic",
-        "Configure error handling",
-        "Test and simulate execution"
+        "Add models and tools",
+        "Configure connections",
+        "Test with sample data"
+      ]
+    }
+  },
+  {
+    id: "tools",
+    icon: <Tool className="h-10 w-10 text-accent" />,
+    title: "Tools",
+    description: "Empower AI models with external tools to expand their capabilities and accuracy.",
+    benefits: [
+      "Function calling",
+      "Code execution",
+      "API integration",
+      "Advanced routing"
+    ],
+    demo: {
+      title: "Tool Integration",
+      steps: [
+        "Select tool category",
+        "Configure parameters",
+        "Set up authentication",
+        "Connect to your workflow"
+      ]
+    }
+  },
+  {
+    id: "models",
+    icon: <Cpu className="h-10 w-10 text-accent" />,
+    title: "Models",
+    description: "Connect to any LLM provider with a unified interface for consistent development.",
+    benefits: [
+      "Multi-provider support",
+      "Model caching",
+      "Cost optimization",
+      "Version control"
+    ],
+    demo: {
+      title: "Model Setup",
+      steps: [
+        "Choose your provider",
+        "Set API credentials",
+        "Configure model parameters",
+        "Test and deploy"
+      ]
+    }
+  },
+  {
+    id: "security",
+    icon: <Shield className="h-10 w-10 text-accent" />,
+    title: "Security",
+    description: "Enterprise-grade security for your AI applications and sensitive data.",
+    benefits: [
+      "End-to-end encryption",
+      "Role-based access control",
+      "Audit logging",
+      "Compliant with regulations"
+    ],
+    demo: {
+      title: "Security Configuration",
+      steps: [
+        "Set up access controls",
+        "Configure encryption",
+        "Define data policies",
+        "Enable audit logging"
       ]
     }
   },
   {
     id: "monitoring",
-    icon: <Check className="h-10 w-10 text-accent" />,
-    title: "Real-time Monitoring",
-    description: "Track all integration activities with advanced analytics.",
+    icon: <BarChart className="h-10 w-10 text-accent" />,
+    title: "Monitoring",
+    description: "Track and analyze your AI applications with comprehensive monitoring tools.",
     benefits: [
-      "Real-time activity dashboards",
-      "Custom alerting",
-      "Error trend analysis",
-      "Performance optimization"
+      "Real-time metrics",
+      "Cost tracking",
+      "Performance analytics",
+      "Error detection"
     ],
     demo: {
-      title: "Monitoring Console",
+      title: "Monitoring Dashboard",
       steps: [
-        "Set up custom dashboards",
-        "Configure alert thresholds",
-        "Review performance metrics",
-        "Generate compliance reports"
+        "Set up custom metrics",
+        "Configure alerts",
+        "Review performance data",
+        "Optimize resources"
       ]
     }
   },
@@ -258,18 +258,18 @@ const DemoCard = ({ feature, isActive, onComplete }: DemoCardProps) => {
 };
 
 const integrationExamples = [
-  { name: "OpenAI", icon: <Sparkles className="h-5 w-5" />, category: "AI" },
-  { name: "Salesforce", icon: <Database className="h-5 w-5" />, category: "CRM" },
-  { name: "Slack", icon: <Code className="h-5 w-5" />, category: "Communication" },
-  { name: "GitHub", icon: <GitBranch className="h-5 w-5" />, category: "Development" },
-  { name: "Notion", icon: <Code className="h-5 w-5" />, category: "Productivity" },
-  { name: "Stripe", icon: <Database className="h-5 w-5" />, category: "Payments" },
-  { name: "HubSpot", icon: <Database className="h-5 w-5" />, category: "Marketing" },
-  { name: "Zoom", icon: <Code className="h-5 w-5" />, category: "Communication" },
+  { name: "OpenAI", icon: <Sparkles className="h-5 w-5" />, category: "LLM" },
+  { name: "Anthropic", icon: <Sparkles className="h-5 w-5" />, category: "LLM" },
+  { name: "Hugging Face", icon: <Sparkles className="h-5 w-5" />, category: "Models" },
+  { name: "Pinecone", icon: <Database className="h-5 w-5" />, category: "Vector DB" },
+  { name: "Postgres", icon: <Database className="h-5 w-5" />, category: "Database" },
+  { name: "Stripe", icon: <CreditCard className="h-5 w-5" />, category: "Payments" },
+  { name: "MongoDB", icon: <Database className="h-5 w-5" />, category: "Database" },
+  { name: "Redis", icon: <Database className="h-5 w-5" />, category: "Cache" },
 ];
 
 const FeaturesSection = () => {
-  const [activeTab, setActiveTab] = useState("easy-integration");
+  const [activeTab, setActiveTab] = useState("data-connectors");
   const [unlockedFeatures, setUnlockedFeatures] = useState<string[]>([]);
   const [progress, setProgress] = useState(0);
   const { toast } = useToast();

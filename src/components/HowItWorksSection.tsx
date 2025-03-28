@@ -8,48 +8,48 @@ const steps = [
   {
     id: "connect",
     title: "Connect",
-    description: "Easily connect your AI applications with our easy integration interface",
+    description: "Connect your data sources and AI models securely",
     content: {
-      title: "Connect your AI app to external services in minutes",
+      title: "Connect your data and AI models in minutes",
       description:
-        "Integration has never been easier. Our platform provides simple, secure connections to all your essential services without any coding required.",
-      image: "https://via.placeholder.com/1200x800/f0f0f5/4338ca?text=Connect+External+Services",
+        "Start by connecting your data sources and AI models. ACI provides a secure, efficient way to bring your data to LLMs without compromising security.",
+      image: "/images/connect-diagram.svg",
       features: [
-        "200+ pre-built integrations",
-        "Secure OAuth authentication",
-        "Real-time connection status monitoring",
+        "30+ AI model integrations",
+        "Secure data connectors",
+        "No token leakage",
       ],
     },
   },
   {
     id: "build",
     title: "Build",
-    description: "Design custom workflows using our visual workflow builder",
+    description: "Create custom AI workflows with our visual editor",
     content: {
-      title: "Create powerful workflows with our visual builder",
+      title: "Build workflows with our visual editor",
       description:
-        "Drag and drop to create complex integration workflows. Test in real-time and deploy with confidence.",
-      image: "https://via.placeholder.com/1200x800/f0f5ff/4338ca?text=Visual+Workflow+Builder",
+        "Design complex AI workflows with our intuitive visual editor. Chain models, add tools, and implement conditional logic without coding.",
+      image: "/images/build-diagram.svg",
       features: [
-        "Intuitive drag-and-drop interface",
-        "Conditional logic and branching",
-        "Custom error handling and retries",
+        "Visual workflow designer",
+        "Model chaining and tools",
+        "Custom Python functions",
       ],
     },
   },
   {
     id: "deploy",
     title: "Deploy",
-    description: "Deploy and monitor your integrations in production",
+    description: "Deploy your AI applications to production",
     content: {
-      title: "Deploy globally with enterprise-grade reliability",
+      title: "Deploy with enterprise-grade reliability",
       description:
-        "With a single click, deploy your integrations to our global infrastructure with automatic scaling and load balancing.",
-      image: "https://via.placeholder.com/1200x800/f0fff5/4338ca?text=Global+Deployment",
+        "Deploy your AI applications to production with confidence. ACI handles scaling, monitoring, and security so you can focus on building value.",
+      image: "/images/deploy-diagram.svg",
       features: [
-        "Automatic version control",
-        "Zero-downtime deployment",
-        "Activity logs and monitoring dashboards",
+        "One-click deployment",
+        "Automatic scaling",
+        "Comprehensive monitoring",
       ],
     },
   },
@@ -66,7 +66,7 @@ const HowItWorksSection = () => {
             How it works
           </h2>
           <p className="text-xl text-foreground/70">
-            Get your AI applications connected in just three simple steps
+            Build AI applications in three simple steps
           </p>
         </div>
 

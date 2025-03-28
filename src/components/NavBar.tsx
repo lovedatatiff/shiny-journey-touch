@@ -56,6 +56,14 @@ const NavBar = () => {
             >
               Pricing
             </a>
+            <a
+              href="https://docs.aci.dev"
+              className="text-foreground/80 hover:text-accent transition-colors font-medium"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Docs
+            </a>
             <Button variant="outline" className="mr-2">
               Sign In
             </Button>
@@ -101,6 +109,15 @@ const NavBar = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Pricing
+              </a>
+              <a
+                href="https://docs.aci.dev"
+                className="block px-4 py-2 text-foreground/80 hover:text-accent hover:bg-muted rounded-md transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Docs
               </a>
               <div className="pt-2 px-4 flex flex-col space-y-3">
                 <Button variant="outline" className="w-full">

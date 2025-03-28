@@ -1,0 +1,50 @@
+
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#F0FFF5" rx="20"/>
+  
+  <!-- Cloud Platform -->
+  <path d="M150 200 C150 150 200 150 250 150 C300 150 300 100 350 100 C400 100 400 150 450 150 C500 150 550 150 550 200 C550 250 500 250 450 250 C400 250 350 250 300 250 C250 250 200 250 200 250 C150 250 150 250 150 200 Z" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+  <text x="350" y="175" font-family="Arial" font-size="18" fill="#1E40AF" text-anchor="middle">Global Deployment</text>
+  
+  <!-- Server Nodes -->
+  <rect x="200" y="300" width="100" height="70" rx="10" fill="#D1FAE5" stroke="#10B981" stroke-width="2"/>
+  <text x="250" y="335" font-family="Arial" font-size="12" fill="#047857" text-anchor="middle">US Server</text>
+  <text x="250" y="355" font-family="Arial" font-size="10" fill="#047857" text-anchor="middle">99.99% Uptime</text>
+  
+  <rect x="350" y="300" width="100" height="70" rx="10" fill="#D1FAE5" stroke="#10B981" stroke-width="2"/>
+  <text x="400" y="335" font-family="Arial" font-size="12" fill="#047857" text-anchor="middle">EU Server</text>
+  <text x="400" y="355" font-family="Arial" font-size="10" fill="#047857" text-anchor="middle">99.99% Uptime</text>
+  
+  <rect x="500" y="300" width="100" height="70" rx="10" fill="#D1FAE5" stroke="#10B981" stroke-width="2"/>
+  <text x="550" y="335" font-family="Arial" font-size="12" fill="#047857" text-anchor="middle">APAC Server</text>
+  <text x="550" y="355" font-family="Arial" font-size="10" fill="#047857" text-anchor="middle">99.99% Uptime</text>
+  
+  <!-- Connections -->
+  <line x1="250" y1="250" x2="250" y2="300" stroke="#4C1D95" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="350" y1="250" x2="400" y2="300" stroke="#4C1D95" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="450" y1="250" x2="550" y2="300" stroke="#4C1D95" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Dashboard Preview -->
+  <rect x="200" y="100" width="400" height="40" rx="5" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  <text x="250" y="125" font-family="Arial" font-size="14" fill="#4B5563">Deployment Dashboard</text>
+  
+  <!-- Graphs -->
+  <path d="M 200 400 L 200 450 L 600 450" stroke="#E2E8F0" stroke-width="2"/>
+  <path d="M 220 440 L 240 420 L 260 430 L 280 400 L 300 410 L 320 420 L 340 405 L 360 415 L 380 425 L 400 410 L 420 400 L 440 430 L 460 420 L 480 410 L 500 420 L 520 430 L 540 425 L 560 415 L 580 425" stroke="#8B5CF6" stroke-width="2" fill="none"/>
+  
+  <!-- Features -->
+  <rect x="150" y="380" width="500" height="70" rx="5" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  
+  <text x="170" y="405" font-family="Arial" font-size="12" fill="#4B5563">• Auto-scaling infrastructure</text>
+  <text x="170" y="430" font-family="Arial" font-size="12" fill="#4B5563">• Zero-downtime deployment</text>
+  
+  <text x="400" y="405" font-family="Arial" font-size="12" fill="#4B5563">• Real-time monitoring</text>
+  <text x="400" y="430" font-family="Arial" font-size="12" fill="#4B5563">• Load balancing</text>
+  
+  <!-- Arrow Marker Definition -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4C1D95"/>
+    </marker>
+  </defs>
+</svg>
