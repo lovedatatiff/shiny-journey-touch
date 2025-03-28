@@ -10,7 +10,7 @@ const features = [
   {
     id: "nocode",
     icon: <Zap className="h-10 w-10 text-accent" />,
-    title: "Effortless and Securely Managed Integration",
+    title: "Easy Integration",
     description: "Connect to over 300+ platforms without writing a single line of code.",
     benefits: [
       "Drag-and-drop interface",

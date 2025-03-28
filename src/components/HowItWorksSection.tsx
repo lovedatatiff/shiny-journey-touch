@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -8,12 +7,12 @@ const steps = [
   {
     id: "connect",
     title: "Connect",
-    description: "Easily connect your AI applications with our effortless and securely managed interface",
+    description: "Easily connect your AI applications with our easy integration interface",
     content: {
       title: "Connect your AI app to external services in minutes",
       description:
         "Integration has never been easier. Our platform provides simple, secure connections to all your essential services without any coding required.",
-      image: "/placeholder.svg",
+      image: "/photo-1487058792275-0ad4aaf24ca7.jpg",
       features: [
         "200+ pre-built integrations",
         "Secure OAuth authentication",
@@ -29,7 +28,7 @@ const steps = [
       title: "Create powerful workflows with our visual builder",
       description:
         "Drag and drop to create complex integration workflows. Test in real-time and deploy with confidence.",
-      image: "/placeholder.svg",
+      image: "/photo-1486312338219-ce68d2c6f44d.jpg",
       features: [
         "Intuitive drag-and-drop interface",
         "Conditional logic and branching",
@@ -45,7 +44,7 @@ const steps = [
       title: "Deploy globally with enterprise-grade reliability",
       description:
         "With a single click, deploy your integrations to our global infrastructure with automatic scaling and load balancing.",
-      image: "/placeholder.svg",
+      image: "/photo-1531297484001-80022131f5a1.jpg",
       features: [
         "Automatic version control",
         "Zero-downtime deployment",
