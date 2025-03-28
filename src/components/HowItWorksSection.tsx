@@ -13,7 +13,7 @@ const steps = [
       title: "Connect your AI app to external services in minutes",
       description:
         "Integration has never been easier. Our platform provides simple, secure connections to all your essential services without any coding required.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&h=800",
+      image: "https://via.placeholder.com/1200x800/f0f0f5/4338ca?text=Connect+External+Services",
       features: [
         "200+ pre-built integrations",
         "Secure OAuth authentication",
@@ -29,7 +29,7 @@ const steps = [
       title: "Create powerful workflows with our visual builder",
       description:
         "Drag and drop to create complex integration workflows. Test in real-time and deploy with confidence.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&h=800",
+      image: "https://via.placeholder.com/1200x800/f0f5ff/4338ca?text=Visual+Workflow+Builder",
       features: [
         "Intuitive drag-and-drop interface",
         "Conditional logic and branching",
@@ -45,7 +45,7 @@ const steps = [
       title: "Deploy globally with enterprise-grade reliability",
       description:
         "With a single click, deploy your integrations to our global infrastructure with automatic scaling and load balancing.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=800",
+      image: "https://via.placeholder.com/1200x800/f0fff5/4338ca?text=Global+Deployment",
       features: [
         "Automatic version control",
         "Zero-downtime deployment",
