@@ -8,7 +8,7 @@ import { useToast } from "@/components/ui/use-toast";
 
 const features = [
   {
-    id: "nocode",
+    id: "easy-integration",
     icon: <Zap className="h-10 w-10 text-accent" />,
     title: "Easy Integration",
     description: "Connect to over 300+ platforms without writing a single line of code.",
@@ -269,7 +269,7 @@ const integrationExamples = [
 ];
 
 const FeaturesSection = () => {
-  const [activeTab, setActiveTab] = useState("nocode");
+  const [activeTab, setActiveTab] = useState("easy-integration");
   const [unlockedFeatures, setUnlockedFeatures] = useState<string[]>([]);
   const [progress, setProgress] = useState(0);
   const { toast } = useToast();
