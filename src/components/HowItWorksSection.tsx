@@ -8,7 +8,7 @@ const steps = [
   {
     id: "connect",
     title: "Connect",
-    description: "Easily connect your AI applications with our no-code interface",
+    description: "Easily connect your AI applications with our effortless and securely managed interface",
     content: {
       title: "Connect your AI app to external services in minutes",
       description:

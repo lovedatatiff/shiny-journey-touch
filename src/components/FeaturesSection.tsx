@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -11,7 +10,7 @@ const features = [
   {
     id: "nocode",
     icon: <Zap className="h-10 w-10 text-accent" />,
-    title: "No-Code Integration",
+    title: "Effortless and Securely Managed Integration",
     description: "Connect to over 300+ platforms without writing a single line of code.",
     benefits: [
       "Drag-and-drop interface",
@@ -276,7 +275,6 @@ const FeaturesSection = () => {
   const { toast } = useToast();
   
   useEffect(() => {
-    // Calculate progress based on unlocked features
     const newProgress = Math.round((unlockedFeatures.length / features.length) * 100);
     setProgress(newProgress);
   }, [unlockedFeatures]);
@@ -286,7 +284,6 @@ const FeaturesSection = () => {
       setUnlockedFeatures(prev => {
         const newUnlocked = [...prev, featureId];
         if (newUnlocked.length === features.length) {
-          // Unlocked all features
           toast({
             title: "🚀 All features unlocked!",
             description: "You've explored all our features. Ready to get started?",
@@ -302,7 +299,6 @@ const FeaturesSection = () => {
 
   return (
     <section id="features" className="py-24 bg-background relative">
-      {/* Floating achievement notification */}
       {progress >= 50 && progress < 100 && (
         <div className="fixed bottom-4 right-4 bg-accent text-white p-4 rounded-lg shadow-lg z-50 animate-bounce">
           <div className="flex items-center gap-2">
