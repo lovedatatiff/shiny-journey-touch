@@ -1,16 +1,17 @@
+
 import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { motion, AnimatePresence } from "framer-motion";
-import { Check, Zap, Globe, Shield, Cpu, Link, ArrowRight, Code, Database, GitBranch, Sparkles, Star, Rocket, Play, Clock, BarChart, Wrench, CreditCard } from "lucide-react";
+import { Check, Shield, Server, Workflow, Key, Package, Play, Clock, BarChart, Wrench, CreditCard, Star, Rocket, ArrowRight, Database } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 
 const features = [
   {
-    id: "data-connectors",
-    icon: <Database className="h-10 w-10 text-accent" />,
-    title: "Data Connectors",
+    id: "pre-built-integrations",
+    icon: <Package className="h-10 w-10 text-accent" />,
+    title: "Pre-built integrations",
     description: "Connect your LLMs to any data source without compromising on security or performance.",
     benefits: [
       "PDF, text, image processing",
@@ -19,9 +20,9 @@ const features = [
       "Zero token leakage"
     ],
     demo: {
-      title: "Data Connection",
+      title: "Integration Setup",
       steps: [
-        "Select data source",
+        "Select integration type",
         "Authenticate securely",
         "Configure data processing",
         "Test and deploy"
@@ -29,9 +30,9 @@ const features = [
     }
   },
   {
-    id: "workflows",
-    icon: <Link className="h-10 w-10 text-accent" />,
-    title: "Workflows",
+    id: "unified-mcp-server",
+    icon: <Server className="h-10 w-10 text-accent" />,
+    title: "Unified MCP server",
     description: "Create custom AI workflows with our visual editor to match your unique business needs.",
     benefits: [
       "Visual workflow builder",
@@ -40,7 +41,7 @@ const features = [
       "Custom Python functions"
     ],
     demo: {
-      title: "Workflow Creation",
+      title: "Server Configuration",
       steps: [
         "Design workflow visually",
         "Add models and tools",
@@ -50,9 +51,9 @@ const features = [
     }
   },
   {
-    id: "tools",
-    icon: <Wrench className="h-10 w-10 text-accent" />,
-    title: "Tools",
+    id: "workflow-discovery",
+    icon: <Workflow className="h-10 w-10 text-accent" />,
+    title: "Workflow discovery",
     description: "Empower AI models with external tools to expand their capabilities and accuracy.",
     benefits: [
       "Function calling",
@@ -61,9 +62,9 @@ const features = [
       "Advanced routing"
     ],
     demo: {
-      title: "Tool Integration",
+      title: "Workflow Discovery",
       steps: [
-        "Select tool category",
+        "Select workflow category",
         "Configure parameters",
         "Set up authentication",
         "Connect to your workflow"
@@ -71,9 +72,9 @@ const features = [
     }
   },
   {
-    id: "models",
-    icon: <Cpu className="h-10 w-10 text-accent" />,
-    title: "Models",
+    id: "managed-auth",
+    icon: <Shield className="h-10 w-10 text-accent" />,
+    title: "Managed auth",
     description: "Connect to any LLM provider with a unified interface for consistent development.",
     benefits: [
       "Multi-provider support",
@@ -82,7 +83,7 @@ const features = [
       "Version control"
     ],
     demo: {
-      title: "Model Setup",
+      title: "Auth Setup",
       steps: [
         "Choose your provider",
         "Set API credentials",
@@ -92,9 +93,9 @@ const features = [
     }
   },
   {
-    id: "security",
-    icon: <Shield className="h-10 w-10 text-accent" />,
-    title: "Security",
+    id: "agent-secrets-manager",
+    icon: <Key className="h-10 w-10 text-accent" />,
+    title: "Agent Secrets Manager",
     description: "Enterprise-grade security for your AI applications and sensitive data.",
     benefits: [
       "End-to-end encryption",
@@ -103,7 +104,7 @@ const features = [
       "Compliant with regulations"
     ],
     demo: {
-      title: "Security Configuration",
+      title: "Secrets Configuration",
       steps: [
         "Set up access controls",
         "Configure encryption",
@@ -113,9 +114,9 @@ const features = [
     }
   },
   {
-    id: "monitoring",
-    icon: <BarChart className="h-10 w-10 text-accent" />,
-    title: "Monitoring",
+    id: "api-guardrails",
+    icon: <Shield className="h-10 w-10 text-accent" />,
+    title: "API guardrails",
     description: "Track and analyze your AI applications with comprehensive monitoring tools.",
     benefits: [
       "Real-time metrics",
@@ -124,7 +125,7 @@ const features = [
       "Error detection"
     ],
     demo: {
-      title: "Monitoring Dashboard",
+      title: "Guardrails Setup",
       steps: [
         "Set up custom metrics",
         "Configure alerts",
@@ -258,9 +259,9 @@ const DemoCard = ({ feature, isActive, onComplete }: DemoCardProps) => {
 };
 
 const integrationExamples = [
-  { name: "OpenAI", icon: <Sparkles className="h-5 w-5" />, category: "LLM" },
-  { name: "Anthropic", icon: <Sparkles className="h-5 w-5" />, category: "LLM" },
-  { name: "Hugging Face", icon: <Sparkles className="h-5 w-5" />, category: "Models" },
+  { name: "OpenAI", icon: <Database className="h-5 w-5" />, category: "LLM" },
+  { name: "Anthropic", icon: <Database className="h-5 w-5" />, category: "LLM" },
+  { name: "Hugging Face", icon: <Database className="h-5 w-5" />, category: "Models" },
   { name: "Pinecone", icon: <Database className="h-5 w-5" />, category: "Vector DB" },
   { name: "Postgres", icon: <Database className="h-5 w-5" />, category: "Database" },
   { name: "Stripe", icon: <CreditCard className="h-5 w-5" />, category: "Payments" },
@@ -269,29 +270,13 @@ const integrationExamples = [
 ];
 
 const FeaturesSection = () => {
-  const [activeTab, setActiveTab] = useState("data-connectors");
+  const [activeTab, setActiveTab] = useState("pre-built-integrations");
   const [unlockedFeatures, setUnlockedFeatures] = useState<string[]>([]);
-  const [progress, setProgress] = useState(0);
   const { toast } = useToast();
-  
-  useEffect(() => {
-    const newProgress = Math.round((unlockedFeatures.length / features.length) * 100);
-    setProgress(newProgress);
-  }, [unlockedFeatures]);
 
   const handleUnlockFeature = (featureId: string) => {
     if (!unlockedFeatures.includes(featureId)) {
-      setUnlockedFeatures(prev => {
-        const newUnlocked = [...prev, featureId];
-        if (newUnlocked.length === features.length) {
-          toast({
-            title: "🚀 All features unlocked!",
-            description: "You've explored all our features. Ready to get started?",
-            className: "bg-green-600 text-white",
-          });
-        }
-        return newUnlocked;
-      });
+      setUnlockedFeatures(prev => [...prev, featureId]);
     }
   };
 
@@ -299,18 +284,6 @@ const FeaturesSection = () => {
 
   return (
     <section id="features" className="py-24 bg-background relative">
-      {progress >= 50 && progress < 100 && (
-        <div className="fixed bottom-4 right-4 bg-accent text-white p-4 rounded-lg shadow-lg z-50 animate-bounce">
-          <div className="flex items-center gap-2">
-            <Star className="h-5 w-5 text-yellow-300" />
-            <div>
-              <p className="font-bold">Half-way there!</p>
-              <p className="text-sm">Keep exploring to unlock all features</p>
-            </div>
-          </div>
-        </div>
-      )}
-      
       <div className="container max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
           <motion.h2 
@@ -331,40 +304,10 @@ const FeaturesSection = () => {
           >
             Everything you need to connect, automate, and scale your AI applications
           </motion.p>
-          
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            viewport={{ once: true }}
-            className="mt-6 bg-muted p-2 rounded-full mx-auto w-full max-w-xs"
-          >
-            <div className="relative pt-1">
-              <div className="flex items-center justify-between">
-                <div>
-                  <span className="text-xs font-semibold inline-block text-accent">
-                    {progress}% Complete
-                  </span>
-                </div>
-                <div className="text-right">
-                  <span className="text-xs font-semibold inline-block text-foreground/70">
-                    {unlockedFeatures.length}/{features.length} Features
-                  </span>
-                </div>
-              </div>
-              <div className="overflow-hidden h-2 mb-1 text-xs flex rounded-full bg-muted">
-                <motion.div 
-                  initial={{ width: "0%" }}
-                  animate={{ width: `${progress}%` }}
-                  transition={{ duration: 0.5 }}
-                  className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-accent"
-                />
-              </div>
-            </div>
-          </motion.div>
         </div>
 
-        <Tabs value={activeTab} onValueChange={setActiveTab} className="mb-12">
+        {/* Tabs moved up with more space before content */}
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="mb-16">
           <TabsList className="grid grid-cols-3 md:grid-cols-6 w-full">
             {features.map((feature) => (
               <TabsTrigger 
@@ -490,7 +433,6 @@ const FeaturesSection = () => {
                   <BarChart className="h-4 w-4 text-accent" />
                   <div className="text-xs">
                     <div className="font-medium">{unlockedFeatures.length} of {features.length} features unlocked</div>
-                    <div className="text-muted-foreground">Interactive demos completed: {(progress/100 * features.length).toFixed(1)}/6</div>
                   </div>
                 </div>
               </div>
