@@ -94,16 +94,20 @@ const HeroSection = () => {
               <p className="text-lg text-foreground/70 animate-fade-in animate-delay-300 max-w-2xl">
                 No more messy logins or complicated permissions. With ACI.dev, your agents can:
               </p>
-              <div className="h-8 overflow-hidden">
-                <div className="text-lg font-medium text-cherry-blossom animate-fade-in animate-delay-400" key={currentCapabilityIndex}>
-                  {agentCapabilities[currentCapabilityIndex]}
-                </div>
+              <div className="h-10 overflow-hidden relative">
+                {agentCapabilities.map((capability, index) => (
+                  <div 
+                    key={index}
+                    className={`text-xl font-medium text-cherry-blossom absolute inset-0 flex items-center transition-opacity duration-300 ${
+                      index === currentCapabilityIndex ? "opacity-100" : "opacity-0"
+                    }`}
+                  >
+                    {capability}
+                  </div>
+                ))}
               </div>
               <p className="text-lg text-foreground/70 animate-fade-in animate-delay-500 max-w-2xl">
-                All with smooth, cross-platform authentication - no extra setup needed.
-              </p>
-              <p className="text-lg text-foreground/70 animate-fade-in animate-delay-500 max-w-2xl">
-                Go from idea to powerful, multi-environment agents in minutes - not weeks.
+                All with smooth, cross-platform authentication.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in animate-delay-200">
