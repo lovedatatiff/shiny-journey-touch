@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -157,16 +156,11 @@ const DemoCard = ({ feature, isActive, onComplete }: DemoCardProps) => {
         setCurrentStep(prevStep => prevStep + 1);
       } else if (currentStep === feature.demo.steps.length - 1) {
         onComplete();
-        toast({
-          title: "🎉 Feature unlocked!",
-          description: `You've mastered the ${feature.title} feature.`,
-          className: "bg-accent text-white",
-        });
       }
     }, 1500);
     
     return () => clearTimeout(timer);
-  }, [currentStep, isActive, feature, onComplete, toast]);
+  }, [currentStep, isActive, feature, onComplete]);
 
   return (
     <motion.div
@@ -306,7 +300,6 @@ const FeaturesSection = () => {
           </motion.p>
         </div>
 
-        {/* Tabs moved up with more space before content */}
         <Tabs value={activeTab} onValueChange={setActiveTab} className="mb-16">
           <TabsList className="grid grid-cols-3 md:grid-cols-6 w-full">
             {features.map((feature) => (
