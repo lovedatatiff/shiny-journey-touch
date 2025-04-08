@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ChevronRight, ArrowRight, Search } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -31,7 +30,7 @@ const HeroSection = () => {
                 <span>AI Application Development</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tighter animate-fade-in">
-                <span className="gradient-text">Connect any LLM</span> to your data
+                <span className="gradient-text">Connect any LLM</span> to any tools
               </h1>
               <p className="text-xl text-foreground/80 animate-fade-in animate-delay-100">
                 Build robust AI applications with secure data connections, sophisticated workflows, and powerful tools to unlock the full potential of large language models.
