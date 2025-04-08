@@ -32,11 +32,11 @@ const NavBar = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <a href="/" className="flex items-center">
-              <div className="w-44">
+              <div className="w-auto">
                 <img 
                   src="/logo-custom.svg" 
-                  alt="Company Logo" 
-                  className="h-8 w-auto" 
+                  alt="AKTIV Logo" 
+                  className="h-10 w-auto" 
                 />
               </div>
             </a>
