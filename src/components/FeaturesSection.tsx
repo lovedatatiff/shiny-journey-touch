@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { motion, AnimatePresence } from "framer-motion";
-import { Check, Zap, Globe, Shield, Cpu, Link, ArrowRight, Code, Database, GitBranch, Sparkles, Star, Rocket, Play, Clock, BarChart, Tool, CreditCard } from "lucide-react";
+import { Check, Zap, Globe, Shield, Cpu, Link, ArrowRight, Code, Database, GitBranch, Sparkles, Star, Rocket, Play, Clock, BarChart, Wrench, CreditCard } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 
 const features = [
@@ -51,7 +51,7 @@ const features = [
   },
   {
     id: "tools",
-    icon: <Tool className="h-10 w-10 text-accent" />,
+    icon: <Wrench className="h-10 w-10 text-accent" />,
     title: "Tools",
     description: "Empower AI models with external tools to expand their capabilities and accuracy.",
     benefits: [
