@@ -1,0 +1,16 @@
+
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main text -->
+  <path d="M15 30L5 10H10L18 26L26 10H31L21 30H15Z" fill="#6269D2"/>
+  <path d="M37 30V10H53V14H42V17.5H52V21.5H42V26H54V30H37Z" fill="#6269D2"/>
+  <path d="M59 30V10H64V26H74V30H59Z" fill="#6269D2"/>
+  <path d="M83 30V10H88V26H98V30H83Z" fill="#8D94E1"/>
+  <path d="M105 30L95 10H100L108 26L116 10H121L111 30H105Z" fill="#8D94E1"/>
+  
+  <!-- Custom emblem -->
+  <circle cx="79" cy="20" r="4" fill="#B7BFFE"/>
+  
+  <!-- Abstract decorative element -->
+  <path d="M4 38C6 38 10 36 12 32" stroke="#B7BFFE" stroke-width="1.5"/>
+  <path d="M116 38C114 38 110 36 108 32" stroke="#B7BFFE" stroke-width="1.5"/>
+</svg>

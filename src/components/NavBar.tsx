@@ -34,7 +34,7 @@ const NavBar = () => {
             <a href="/" className="flex items-center">
               <div className="w-44">
                 <img 
-                  src="/logo-aci.svg" 
+                  src="/logo-custom.svg" 
                   alt="Company Logo" 
                   className="h-8 w-auto" 
                 />
