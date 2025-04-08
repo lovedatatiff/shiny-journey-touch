@@ -2,6 +2,8 @@
 import { Button } from "@/components/ui/button";
 import { ChevronRight, ArrowRight, Search } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { useEffect, useState } from "react";
+import { Github, Calendar, FileText, MessageCircle, ShoppingBag, Youtube } from "lucide-react";
 
 const HeroSection = () => {
   // Sample integrations data - this would typically come from an API
@@ -20,6 +22,27 @@ const HeroSection = () => {
     { name: "Mistral", status: "Active", icon: "🌬️" }
   ];
 
+  const toolOptions = [
+    { name: "Github", icon: <Github className="h-7 w-7 inline-block mr-1" /> },
+    { name: "Google Calendar", icon: <Calendar className="h-7 w-7 inline-block mr-1" /> },
+    { name: "HubSpot", icon: <div className="inline-flex items-center justify-center h-7 w-7 bg-orange-500 text-white rounded mr-1"><span className="font-bold">H</span></div> },
+    { name: "Notion", icon: <FileText className="h-7 w-7 inline-block mr-1" /> },
+    { name: "Discord", icon: <div className="inline-flex items-center justify-center h-7 w-7 bg-indigo-600 text-white rounded mr-1"><span>#</span></div> },
+    { name: "Slack", icon: <MessageCircle className="h-7 w-7 inline-block mr-1" /> },
+    { name: "Shopify", icon: <ShoppingBag className="h-7 w-7 inline-block mr-1" /> },
+    { name: "YouTube", icon: <Youtube className="h-7 w-7 inline-block mr-1" /> },
+  ];
+
+  const [currentToolIndex, setCurrentToolIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentToolIndex(prevIndex => (prevIndex + 1) % toolOptions.length);
+    }, 2000); // Change tool every 2 seconds
+
+    return () => clearInterval(interval);
+  }, [toolOptions.length]);
+
   return (
     <section className="pt-32 pb-20 overflow-hidden hero-gradient">
       <div className="container max-w-7xl mx-auto px-4 md:px-6">
@@ -31,7 +54,12 @@ const HeroSection = () => {
                 <span>Access developer portal</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tighter animate-fade-in">
-                <span className="gradient-text">Connect any LLM</span> to any tools
+                <span className="gradient-text">Connect any LLM</span> to any <span className="inline-flex items-center text-accent">
+                  <span className="animate-fade-in" key={currentToolIndex}>
+                    {toolOptions[currentToolIndex].icon}
+                    {toolOptions[currentToolIndex].name}
+                  </span>
+                </span>
               </h1>
               <p className="text-xl text-foreground/80 animate-fade-in animate-delay-100">
                 Build robust AI applications with secure data connections, sophisticated workflows, and powerful tools to unlock the full potential of large language models.
