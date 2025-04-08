@@ -91,14 +91,14 @@ const PricingSection = () => {
               key={index}
               className={`relative overflow-hidden transition-all animate-fade-in ${
                 option.popular
-                  ? "border-accent shadow-lg ring-1 ring-accent/50 md:scale-105"
-                  : "border-border hover:border-accent/30"
+                  ? "border-[#6269D2] shadow-lg ring-1 ring-[#6269D2]/50 md:scale-105"
+                  : "border-border hover:border-[#8D94E1]/30"
               }`}
               style={{ animationDelay: `${index * 150}ms` }}
             >
               {option.popular && (
                 <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 transform rotate-45">
-                  <div className="bg-accent text-white text-xs font-semibold py-1 px-10 shadow-md">
+                  <div className="bg-[#6269D2] text-white text-xs font-semibold py-1 px-10 shadow-md">
                     Popular
                   </div>
                 </div>
@@ -121,7 +121,7 @@ const PricingSection = () => {
                 <ul className="space-y-3">
                   {option.features.map((feature, i) => (
                     <li key={i} className="flex">
-                      <Check className={`h-5 w-5 mr-3 ${option.popular ? "text-accent" : "text-primary"}`} />
+                      <Check className={`h-5 w-5 mr-3 ${option.popular ? "text-[#6269D2]" : "text-primary"}`} />
                       <span>{feature}</span>
                     </li>
                   ))}
@@ -129,7 +129,7 @@ const PricingSection = () => {
                 <Button
                   className={`w-full ${
                     option.popular
-                      ? "bg-accent hover:bg-accent/90"
+                      ? "bg-[#6269D2] hover:bg-[#646CD2]"
                       : "bg-primary hover:bg-primary/90"
                   }`}
                 >
@@ -146,7 +146,7 @@ const PricingSection = () => {
             We offer tailored solutions for enterprises building AI at scale.
             Contact our sales team to discuss your specific requirements.
           </p>
-          <Button variant="outline" size="lg">
+          <Button variant="outline" size="lg" className="border-[#8D94E1]/30 text-[#646CD2] hover:bg-[#B7BFFE]/10">
             Contact Sales
           </Button>
         </div>

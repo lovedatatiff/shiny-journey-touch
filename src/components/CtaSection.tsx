@@ -4,11 +4,11 @@ import { Input } from "@/components/ui/input";
 
 const CtaSection = () => {
   return (
-    <section className="py-24 bg-gradient-to-br from-accent/10 to-accent/5">
+    <section className="py-24 bg-gradient-to-br from-[#B7BFFE]/20 to-[#B7BFFE]/5">
       <div className="container max-w-5xl mx-auto px-4 md:px-6 text-center">
-        <div className="bg-card border border-accent/20 rounded-2xl p-8 md:p-12 shadow-xl animate-fade-in">
+        <div className="bg-card border border-[#8D94E1]/20 rounded-2xl p-8 md:p-12 shadow-xl animate-fade-in">
           <div className="max-w-3xl mx-auto space-y-6">
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-accent/10 text-accent border border-accent/20 text-sm font-medium">
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#6269D2]/10 text-[#6269D2] border border-[#6269D2]/20 text-sm font-medium">
               <span className="animate-wave mr-2">🚀</span>
               <span>Ready to get started?</span>
             </div>
@@ -24,7 +24,7 @@ const CtaSection = () => {
                 placeholder="Enter your email address" 
                 className="text-base h-12" 
               />
-              <Button className="bg-accent hover:bg-accent/90 h-12 px-6">
+              <Button className="bg-[#6269D2] hover:bg-[#646CD2] h-12 px-6">
                 Get Started Free
               </Button>
             </div>

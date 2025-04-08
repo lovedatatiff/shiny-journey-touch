@@ -49,7 +49,7 @@ const TestimonialsSection = () => {
               className="p-6 bg-card border border-border animate-fade-in card-hover"
               style={{ animationDelay: `${index * 150}ms` }}
             >
-              <div className="flex justify-center mb-4 text-accent">
+              <div className="flex justify-center mb-4 text-[#6269D2]">
                 <Quote className="h-10 w-10 opacity-30" />
               </div>
               <blockquote className="text-lg mb-6 text-center">

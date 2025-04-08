@@ -13,15 +13,15 @@ const Footer = () => {
               Build, deploy, and scale AI applications with confidence.
             </p>
             <div className="flex space-x-4 pt-2">
-              <Button variant="ghost" size="icon" className="h-10 w-10 rounded-full">
+              <Button variant="ghost" size="icon" className="h-10 w-10 rounded-full hover:text-[#6269D2] hover:bg-[#B7BFFE]/10">
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Button>
-              <Button variant="ghost" size="icon" className="h-10 w-10 rounded-full">
+              <Button variant="ghost" size="icon" className="h-10 w-10 rounded-full hover:text-[#6269D2] hover:bg-[#B7BFFE]/10">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Button>
-              <Button variant="ghost" size="icon" className="h-10 w-10 rounded-full">
+              <Button variant="ghost" size="icon" className="h-10 w-10 rounded-full hover:text-[#6269D2] hover:bg-[#B7BFFE]/10">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Button>
@@ -35,7 +35,7 @@ const Footer = () => {
                 <li key={i}>
                   <a
                     href="#"
-                    className="text-foreground/70 hover:text-accent transition-colors"
+                    className="text-foreground/70 hover:text-[#6269D2] transition-colors"
                   >
                     {item}
                   </a>
@@ -51,7 +51,7 @@ const Footer = () => {
                 <li key={i}>
                   <a
                     href="#"
-                    className="text-foreground/70 hover:text-accent transition-colors"
+                    className="text-foreground/70 hover:text-[#6269D2] transition-colors"
                   >
                     {item}
                   </a>
@@ -67,7 +67,7 @@ const Footer = () => {
                 <li key={i}>
                   <a
                     href="#"
-                    className="text-foreground/70 hover:text-accent transition-colors"
+                    className="text-foreground/70 hover:text-[#6269D2] transition-colors"
                   >
                     {item}
                   </a>
@@ -82,13 +82,13 @@ const Footer = () => {
             © 2023 ACI.dev. All rights reserved.
           </div>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-foreground/60 hover:text-accent text-sm">
+            <a href="#" className="text-foreground/60 hover:text-[#6269D2] text-sm">
               Terms of Service
             </a>
-            <a href="#" className="text-foreground/60 hover:text-accent text-sm">
+            <a href="#" className="text-foreground/60 hover:text-[#6269D2] text-sm">
               Privacy Policy
             </a>
-            <a href="#" className="text-foreground/60 hover:text-accent text-sm">
+            <a href="#" className="text-foreground/60 hover:text-[#6269D2] text-sm">
               Cookies
             </a>
           </div>

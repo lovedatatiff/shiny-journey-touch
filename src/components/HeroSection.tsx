@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ChevronRight, ArrowRight, Search } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -25,7 +26,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-accent/10 text-accent border border-accent/20 text-sm font-medium mb-2">
+              <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#6269D2]/10 text-[#6269D2] border border-[#6269D2]/20 text-sm font-medium mb-2">
                 <span className="animate-wave mr-2">👋</span>
                 <span>AI Application Development</span>
               </div>
@@ -37,11 +38,11 @@ const HeroSection = () => {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in animate-delay-200">
-              <Button className="text-lg px-8 py-6 bg-accent hover:bg-accent/90 shadow-lg hover:shadow-xl transition-all group">
+              <Button className="text-lg px-8 py-6 bg-[#6269D2] hover:bg-[#646CD2] shadow-lg hover:shadow-xl transition-all group">
                 Start Building Free
                 <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" className="text-lg px-8 py-6">
+              <Button variant="outline" className="text-lg px-8 py-6 border-[#8D94E1]/30 text-[#646CD2] hover:bg-[#B7BFFE]/10">
                 Book a Demo
               </Button>
             </div>
@@ -69,7 +70,7 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="relative animate-float">
-            <div className="absolute inset-0 bg-gradient-radial from-accent/20 to-transparent opacity-70 blur-3xl -z-10"></div>
+            <div className="absolute inset-0 bg-gradient-radial from-[#6269D2]/20 to-transparent opacity-70 blur-3xl -z-10"></div>
             <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-border animate-fade-in">
               <div className="bg-muted p-3 flex items-center space-x-2 border-b border-border">
                 <div className="flex space-x-1">
@@ -94,7 +95,7 @@ const HeroSection = () => {
                           className="pl-8 h-7 text-xs rounded-md border border-input w-32 bg-background"
                         />
                       </div>
-                      <Button variant="ghost" size="sm" className="text-accent flex items-center text-xs h-7 px-2">
+                      <Button variant="ghost" size="sm" className="text-[#6269D2] flex items-center text-xs h-7 px-2">
                         View All <ArrowRight className="ml-1 h-3 w-3" />
                       </Button>
                     </div>
@@ -107,7 +108,7 @@ const HeroSection = () => {
                           key={i}
                           className="flex items-center p-1.5 bg-background rounded-md border border-border hover:bg-muted/50 transition-colors"
                         >
-                          <div className="w-6 h-6 flex items-center justify-center bg-accent/10 rounded text-sm mr-2">
+                          <div className="w-6 h-6 flex items-center justify-center bg-[#6269D2]/10 rounded text-sm mr-2">
                             {integration.icon}
                           </div>
                           <div className="flex-1 min-w-0">

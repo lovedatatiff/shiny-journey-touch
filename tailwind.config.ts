@@ -65,7 +65,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Add direct color references
+				'primary-blue': '#6269D2',
+				'secondary-blue': '#646CD2',
+				'tertiary-blue': '#8D94E1',
+				'light-blue': '#B7BFFE',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -112,9 +117,11 @@ export default {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 				'shimmer': 'linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0) 100%)',
+				'main-gradient': 'linear-gradient(to right, #6269D2, #8D94E1)',
+				'light-gradient': 'linear-gradient(to right, #8D94E1, #B7BFFE)',
 			},
 			boxShadow: {
-				highlight: '0 0 0 2px rgba(124, 58, 237, 0.6)',
+				highlight: '0 0 0 2px rgba(98, 105, 210, 0.6)',
 			},
 		}
 	},

@@ -40,34 +40,34 @@ const NavBar = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <a
               href="#features"
-              className="text-foreground/80 hover:text-accent transition-colors font-medium"
+              className="text-foreground/80 hover:text-[#6269D2] transition-colors font-medium"
             >
               Features
             </a>
             <a
               href="#how-it-works"
-              className="text-foreground/80 hover:text-accent transition-colors font-medium"
+              className="text-foreground/80 hover:text-[#6269D2] transition-colors font-medium"
             >
               How it Works
             </a>
             <a
               href="#pricing"
-              className="text-foreground/80 hover:text-accent transition-colors font-medium"
+              className="text-foreground/80 hover:text-[#6269D2] transition-colors font-medium"
             >
               Pricing
             </a>
             <a
               href="https://docs.aci.dev"
-              className="text-foreground/80 hover:text-accent transition-colors font-medium"
+              className="text-foreground/80 hover:text-[#6269D2] transition-colors font-medium"
               target="_blank"
               rel="noopener noreferrer"
             >
               Docs
             </a>
-            <Button variant="outline" className="mr-2">
+            <Button variant="outline" className="mr-2 border-[#8D94E1]/30 text-[#646CD2] hover:bg-[#B7BFFE]/10">
               Sign In
             </Button>
-            <Button className="bg-accent hover:bg-accent/90">
+            <Button className="bg-[#6269D2] hover:bg-[#646CD2]">
               Get Started
             </Button>
           </nav>
@@ -91,28 +91,28 @@ const NavBar = () => {
             <div className="container py-4 space-y-4">
               <a
                 href="#features"
-                className="block px-4 py-2 text-foreground/80 hover:text-accent hover:bg-muted rounded-md transition-colors"
+                className="block px-4 py-2 text-foreground/80 hover:text-[#6269D2] hover:bg-muted rounded-md transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Features
               </a>
               <a
                 href="#how-it-works"
-                className="block px-4 py-2 text-foreground/80 hover:text-accent hover:bg-muted rounded-md transition-colors"
+                className="block px-4 py-2 text-foreground/80 hover:text-[#6269D2] hover:bg-muted rounded-md transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 How it Works
               </a>
               <a
                 href="#pricing"
-                className="block px-4 py-2 text-foreground/80 hover:text-accent hover:bg-muted rounded-md transition-colors"
+                className="block px-4 py-2 text-foreground/80 hover:text-[#6269D2] hover:bg-muted rounded-md transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Pricing
               </a>
               <a
                 href="https://docs.aci.dev"
-                className="block px-4 py-2 text-foreground/80 hover:text-accent hover:bg-muted rounded-md transition-colors"
+                className="block px-4 py-2 text-foreground/80 hover:text-[#6269D2] hover:bg-muted rounded-md transition-colors"
                 onClick={() => setIsMenuOpen(false)}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -120,10 +120,10 @@ const NavBar = () => {
                 Docs
               </a>
               <div className="pt-2 px-4 flex flex-col space-y-3">
-                <Button variant="outline" className="w-full">
+                <Button variant="outline" className="w-full border-[#8D94E1]/30 text-[#646CD2] hover:bg-[#B7BFFE]/10">
                   Sign In
                 </Button>
-                <Button className="w-full bg-accent hover:bg-accent/90">
+                <Button className="w-full bg-[#6269D2] hover:bg-[#646CD2]">
                   Get Started
                 </Button>
               </div>
