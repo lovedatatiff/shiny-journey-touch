@@ -7,7 +7,7 @@ import { Switch } from "@/components/ui/switch";
 
 const pricingOptions = [
   {
-    title: "Starter",
+    title: "Free",
     price: { monthly: 0, annual: 0 },
     description: "Perfect for trying out ACI.dev",
     features: [
@@ -21,23 +21,39 @@ const pricingOptions = [
     popular: false,
   },
   {
+    title: "Basic",
+    price: { monthly: 19, annual: 16 },
+    description: "For solo developers",
+    features: [
+      "5 workflows",
+      "5,000 API calls per month",
+      "3 data connectors",
+      "Email support",
+      "3 day log retention",
+      "Custom Python functions",
+    ],
+    cta: "Start Free Trial",
+    popular: false,
+  },
+  {
     title: "Pro",
-    price: { monthly: 79, annual: 69 },
+    price: { monthly: 99, annual: 79 },
     description: "For professional developers",
     features: [
       "Unlimited workflows",
-      "10,000 API calls per month",
-      "5 data connectors",
-      "Email support",
-      "7 day log retention",
+      "25,000 API calls per month",
+      "10 data connectors",
+      "Priority email support",
+      "14 day log retention",
       "Custom Python functions",
+      "Advanced security",
     ],
     cta: "Start Free Trial",
     popular: true,
   },
   {
     title: "Enterprise",
-    price: { monthly: 299, annual: 249 },
+    price: { monthly: 199, annual: 159 },
     description: "For organizations building AI at scale",
     features: [
       "Unlimited workflows",
@@ -85,7 +101,7 @@ const PricingSection = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {pricingOptions.map((option, index) => (
             <Card
               key={index}
@@ -110,12 +126,20 @@ const PricingSection = () => {
                 </div>
                 <div className="space-y-2">
                   <div className="flex items-baseline">
-                    <span className="text-4xl font-bold">
-                      ${option.price[billingCycle]}
-                    </span>
-                    <span className="text-foreground/70 ml-2">
-                      {option.price[billingCycle] === 0 ? "Free" : `/ ${billingCycle === "monthly" ? "month" : "month, billed annually"}`}
-                    </span>
+                    {option.title === "Enterprise" && billingCycle === "monthly" ? (
+                      <span className="text-lg font-bold">Price upon inquiry</span>
+                    ) : option.title === "Enterprise" && billingCycle === "annual" ? (
+                      <span className="text-lg font-bold">Price upon inquiry</span>
+                    ) : (
+                      <>
+                        <span className="text-4xl font-bold">
+                          ${option.price[billingCycle]}
+                        </span>
+                        <span className="text-foreground/70 ml-2">
+                          {option.price[billingCycle] === 0 ? "Free" : `/ ${billingCycle === "monthly" ? "month" : "month, billed annually"}`}
+                        </span>
+                      </>
+                    )}
                   </div>
                 </div>
                 <ul className="space-y-3">

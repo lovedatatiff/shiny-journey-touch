@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Github, MessageSquare } from "lucide-react";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,12 +32,18 @@ const NavBar = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <a href="/" className="flex items-center">
-              <span className="text-2xl font-bold gradient-text">ACI.dev</span>
+              <div className="w-32">
+                <img 
+                  src="/logo-aci.svg" 
+                  alt="ACI.dev Logo" 
+                  className="h-8 w-auto" 
+                />
+              </div>
             </a>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-6">
             <a
               href="#features"
               className="text-foreground/80 hover:text-[#6269D2] transition-colors font-medium"
@@ -64,6 +70,24 @@ const NavBar = () => {
             >
               Docs
             </a>
+            <div className="flex items-center space-x-3">
+              <a 
+                href="https://github.com/aci-dev" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-foreground/80 hover:text-[#6269D2] transition-colors"
+              >
+                <Github className="h-5 w-5" />
+              </a>
+              <a 
+                href="https://discord.gg/aci-dev" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-foreground/80 hover:text-[#6269D2] transition-colors"
+              >
+                <MessageSquare className="h-5 w-5" />
+              </a>
+            </div>
             <Button variant="outline" className="mr-2 border-[#8D94E1]/30 text-[#646CD2] hover:bg-[#B7BFFE]/10">
               Sign In
             </Button>
@@ -119,6 +143,24 @@ const NavBar = () => {
               >
                 Docs
               </a>
+              <div className="flex items-center space-x-4 px-4 py-2">
+                <a 
+                  href="https://github.com/aci-dev" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-foreground/80 hover:text-[#6269D2] transition-colors"
+                >
+                  <Github className="h-5 w-5" />
+                </a>
+                <a 
+                  href="https://discord.gg/aci-dev" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-foreground/80 hover:text-[#6269D2] transition-colors"
+                >
+                  <MessageSquare className="h-5 w-5" />
+                </a>
+              </div>
               <div className="pt-2 px-4 flex flex-col space-y-3">
                 <Button variant="outline" className="w-full border-[#8D94E1]/30 text-[#646CD2] hover:bg-[#B7BFFE]/10">
                   Sign In

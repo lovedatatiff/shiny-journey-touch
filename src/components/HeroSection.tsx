@@ -27,8 +27,8 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#6269D2]/10 text-[#6269D2] border border-[#6269D2]/20 text-sm font-medium mb-2">
-                <span className="animate-wave mr-2">👋</span>
-                <span>AI Application Development</span>
+                <span className="mr-2">👨‍💻</span>
+                <span>Access developer portal</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tighter animate-fade-in">
                 <span className="gradient-text">Connect any LLM</span> to any tools
@@ -65,7 +65,7 @@ const HeroSection = () => {
                 />
               </div>
               <div className="text-sm text-foreground/80">
-                <span className="font-medium">1000+</span> developers trust ACI.dev
+                <span className="font-medium">200+</span> developers trust ACI.dev
               </div>
             </div>
           </div>

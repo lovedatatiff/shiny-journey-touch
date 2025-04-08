@@ -9,7 +9,7 @@ const CtaSection = () => {
         <div className="bg-card border border-[#8D94E1]/20 rounded-2xl p-8 md:p-12 shadow-xl animate-fade-in">
           <div className="max-w-3xl mx-auto space-y-6">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#6269D2]/10 text-[#6269D2] border border-[#6269D2]/20 text-sm font-medium">
-              <span className="animate-wave mr-2">🚀</span>
+              <span className="mr-2">🚀</span>
               <span>Ready to get started?</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold leading-tight">
