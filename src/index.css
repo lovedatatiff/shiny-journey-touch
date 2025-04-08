@@ -43,6 +43,8 @@
     --sidebar-accent-foreground: 240 6% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217 91% 60%;
+    
+    --cherry-blossom: 350 100% 88%; /* Cherry blossom pink color */
   }
 
   .dark {
@@ -73,6 +75,8 @@
     --border: 217 32% 17%;
     --input: 217 32% 17%;
     --ring: 213 27% 84%;
+    
+    --cherry-blossom: 350 100% 82%; /* Cherry blossom pink color for dark mode */
   }
 }
 
@@ -98,6 +102,10 @@
   
   .card-hover {
     @apply transition-all duration-300 hover:shadow-lg hover:scale-[1.02];
+  }
+  
+  .text-cherry-blossom {
+    @apply text-[#FFDEE2];
   }
 }
 

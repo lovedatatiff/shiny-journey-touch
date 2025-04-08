@@ -71,6 +71,7 @@ export default {
 				'secondary-blue': '#646CD2',
 				'tertiary-blue': '#8D94E1',
 				'light-blue': '#B7BFFE',
+				'cherry-blossom': '#FFDEE2',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

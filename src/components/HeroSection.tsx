@@ -54,7 +54,7 @@ const HeroSection = () => {
                 <span>Access developer portal</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tighter animate-fade-in">
-                <span className="gradient-text">Connect any LLM</span> to any <span className="inline-flex items-center text-accent">
+                <span className="gradient-text">Connect LLM</span> to <span className="inline-flex items-center text-cherry-blossom">
                   <span className="animate-fade-in" key={currentToolIndex}>
                     {toolOptions[currentToolIndex].icon}
                     {toolOptions[currentToolIndex].name}
