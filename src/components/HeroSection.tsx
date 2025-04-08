@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ChevronRight, ArrowRight, Search } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -42,6 +43,29 @@ const HeroSection = () => {
 
     return () => clearInterval(interval);
   }, [toolOptions.length]);
+  
+  // New agent capabilities for rolling effect
+  const agentCapabilities = [
+    "Update CRMs",
+    "Search for information",
+    "Schedule meetings",
+    "Send emails",
+    "Get Twitter trends and automatically generate memecoins on pump.fun",
+    "Update Notion",
+    "Slack your colleague",
+    "Add items to Shopify",
+    "... sky is the limit"
+  ];
+  
+  const [currentCapabilityIndex, setCurrentCapabilityIndex] = useState(0);
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentCapabilityIndex(prevIndex => (prevIndex + 1) % agentCapabilities.length);
+    }, 2500); // Change capability every 2.5 seconds
+    
+    return () => clearInterval(interval);
+  }, [agentCapabilities.length]);
 
   return (
     <section className="pt-32 pb-20 overflow-hidden hero-gradient">
@@ -62,7 +86,24 @@ const HeroSection = () => {
                 </span>
               </h1>
               <p className="text-xl text-foreground/80 animate-fade-in animate-delay-100">
-                Build robust AI applications with secure data connections, sophisticated workflows, and powerful tools to unlock the full potential of large language models.
+                Build smarter agents, faster.
+              </p>
+              <p className="text-lg text-foreground/70 animate-fade-in animate-delay-200 max-w-2xl">
+                ACI.dev makes it easy for developers to build agents that can call APIs, browse the web, and interact with any third party applications, securely and seamlessly.
+              </p>
+              <p className="text-lg text-foreground/70 animate-fade-in animate-delay-300 max-w-2xl">
+                No more messy logins or complicated permissions. With ACI.dev, your agents can:
+              </p>
+              <div className="h-8 overflow-hidden">
+                <div className="text-lg font-medium text-cherry-blossom animate-fade-in animate-delay-400" key={currentCapabilityIndex}>
+                  {agentCapabilities[currentCapabilityIndex]}
+                </div>
+              </div>
+              <p className="text-lg text-foreground/70 animate-fade-in animate-delay-500 max-w-2xl">
+                All with smooth, cross-platform authentication - no extra setup needed.
+              </p>
+              <p className="text-lg text-foreground/70 animate-fade-in animate-delay-500 max-w-2xl">
+                Go from idea to powerful, multi-environment agents in minutes - not weeks.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in animate-delay-200">
