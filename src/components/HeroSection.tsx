@@ -168,37 +168,37 @@ const HeroSection = () => {
                   ACI Integration Dashboard
                 </div>
               </div>
-              <div className="p-4 space-y-3">
-                <div className="space-y-3">
+              <div className="p-6 space-y-4">
+                <div className="space-y-4">
                   <div className="flex justify-between items-center">
-                    <h3 className="text-base font-semibold">Active AI Models</h3>
+                    <h3 className="text-lg font-semibold">Active API Integrations</h3>
                     <div className="flex items-center gap-2">
                       <div className="relative">
                         <Search className="absolute left-2 top-1/2 transform -translate-y-1/2 h-3.5 w-3.5 text-muted-foreground" />
                         <input 
                           type="text" 
                           placeholder="Filter..." 
-                          className="pl-8 h-7 text-xs rounded-md border border-input w-32 bg-background"
+                          className="pl-8 h-8 text-xs rounded-md border border-input w-36 bg-background"
                         />
                       </div>
-                      <Button variant="ghost" size="sm" className="text-[#6269D2] flex items-center text-xs h-7 px-2">
+                      <Button variant="ghost" size="sm" className="text-[#6269D2] flex items-center text-xs h-8 px-3">
                         View All <ArrowRight className="ml-1 h-3 w-3" />
                       </Button>
                     </div>
                   </div>
                   
-                  <ScrollArea className="h-[190px] rounded-md border">
-                    <div className="grid grid-cols-2 gap-1.5 p-2">
+                  <ScrollArea className="h-[240px] rounded-md border">
+                    <div className="grid grid-cols-2 gap-2 p-3">
                       {integrations.map((integration, i) => (
                         <div
                           key={i}
-                          className="flex items-center p-1.5 bg-background rounded-md border border-border hover:bg-muted/50 transition-colors"
+                          className="flex items-center p-2 bg-background rounded-md border border-border hover:bg-muted/50 transition-colors"
                         >
-                          <div className="w-6 h-6 flex items-center justify-center bg-[#6269D2]/10 rounded text-sm mr-2">
+                          <div className="w-8 h-8 flex items-center justify-center bg-[#6269D2]/10 rounded text-sm mr-2">
                             {integration.icon}
                           </div>
                           <div className="flex-1 min-w-0">
-                            <div className="text-xs font-medium truncate">{integration.name}</div>
+                            <div className="text-sm font-medium truncate">{integration.name}</div>
                           </div>
                           <div className="flex items-center ml-1">
                             <div className="w-1.5 h-1.5 rounded-full bg-green-500 mr-1"></div>
@@ -208,8 +208,8 @@ const HeroSection = () => {
                     </div>
                   </ScrollArea>
                   
-                  <div className="text-xs text-muted-foreground text-center">
-                    <span className="font-medium">30+</span> AI models and integrations available
+                  <div className="text-sm text-muted-foreground text-center">
+                    <span className="font-medium">30+</span> API integrations available
                   </div>
                 </div>
               </div>
