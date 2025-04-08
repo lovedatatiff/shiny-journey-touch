@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -66,12 +65,11 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Add direct color references
 				'primary-blue': '#6269D2',
 				'secondary-blue': '#646CD2',
 				'tertiary-blue': '#8D94E1',
 				'light-blue': '#B7BFFE',
-				'cherry-blossom': '#FFDEE2',
+				'cherry-blossom': '#FF9FB1',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ChevronRight, ArrowRight, Search } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -31,6 +30,7 @@ const HeroSection = () => {
     { name: "Slack", icon: <MessageCircle className="h-7 w-7 inline-block mr-1" /> },
     { name: "Shopify", icon: <ShoppingBag className="h-7 w-7 inline-block mr-1" /> },
     { name: "YouTube", icon: <Youtube className="h-7 w-7 inline-block mr-1" /> },
+    { name: "Any tool", icon: <div className="inline-flex items-center justify-center h-7 w-7 bg-cherry-blossom text-white rounded-full mr-1"><span className="font-bold">+</span></div> },
   ];
 
   const [currentToolIndex, setCurrentToolIndex] = useState(0);
